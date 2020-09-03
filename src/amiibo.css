@@ -1,0 +1,25 @@
+html {
+    background: rgb(173, 173, 173);
+}
+
+.mainDiv {
+    margin: 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.amiibo {
+    width: 20%;
+    margin: 15px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 3px 4px black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
