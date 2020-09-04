@@ -3,13 +3,8 @@ import amiiboData from './data/amiibo.json'
 import './amiibo.css'
 
 const amiiboChars = amiiboData.amiibo;
-const amiiboImg = amiiboData.amiibo[0].image;
 
 
-// var sectionStyle = {
-//     backgroundImage: `url(${amiiboImg})`
-
-// };
 
 function Amiibo() {
     return (
