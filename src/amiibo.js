@@ -6,8 +6,9 @@ const amiiboChars = amiiboData.amiibo;
 
 
 
-function Amiibo() {
+function Amiibo(props) {
     return (
+        
         <div className="mainDiv">
             {
                 amiiboChars.map(amiiboChar => {
@@ -16,7 +17,7 @@ function Amiibo() {
                         <div key={amiiboChar.tail} className="amiibo" style = {{ backgroundImage: `url(${bkgrndImg})` }}>
                             <div>
                                 <h1>
-                                    Name: {amiiboChar.character}
+                                    Name: {amiiboChar.name}
                                 </h1>
                             </div>
                             <div>
