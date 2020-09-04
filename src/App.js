@@ -11,12 +11,17 @@ const characterName = amiiboCharacters.map(amiiboCharacter => {
   return amiiboCharacter.name.toLowerCase();
 });
 
+// const eachName = characterName.map(charName => {
+//   return {charName}
+// })
+
 class App extends React.Component{
   
   constructor(){
     super();
     this.state = {
       names: [{ characterName }],
+      // name: [{ eachName }],
       characters: [{ amiiboCharacters }],
       searchField: ''
     }
@@ -26,27 +31,14 @@ class App extends React.Component{
     const filteredNames = names.filter(name =>(
       name.characterName.includes(searchField.toLowerCase)
     ))
-    // const filteredNames = names.filter(character =>(
-    //   character.amiiboCharacters.includes(searchField)
-    // ))
     return (
       <div className="App">
         <Header/>
         <SearchBox placeholder='Enter Amiibo name...' handleChange={(e) => this.setState({searchField:e.target.value})}/>
-        <Amiibo/>
+        <Amiibo names = {filteredNames}/>
       </div>
     )
   }
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Header/>
-//       <SearchBox placeholder='Enter Amiibo name...' handleChange={(e) => console.log(e.target.value)}/>
-//       <Amiibo/>
-//     </div>
-//   );
-// }
 
 export default App;

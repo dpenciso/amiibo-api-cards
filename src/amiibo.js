@@ -6,7 +6,7 @@ const amiiboChars = amiiboData.amiibo;
 
 
 
-function Amiibo(props) {
+function Amiibo() {
     return (
         
         <div className="mainDiv">
