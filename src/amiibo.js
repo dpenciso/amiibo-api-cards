@@ -1,7 +1,7 @@
 import React from 'react';
 import amiiboData from './data/amiibo.json'
 import './amiibo.css'
-import SearchBox from './search';
+
 
 
 class Amiibo extends React.Component{
